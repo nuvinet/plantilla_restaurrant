@@ -1,48 +1,42 @@
-# Astro Starter Kit: Basics
+# 🍽️ Landing Page para Restaurante - Proyecto de Demostración
 
-```sh
-pnpm create astro@latest -- --template basics
-```
+Esta es una **landing page moderna, rápida y responsive** creada para mostrar cómo podría lucir la presencia web de un restaurante. El objetivo de esta página es servir como **demostración** para posibles clientes que buscan una **página web informativa, atractiva y efectiva** para sus negocios gastronómicos.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## 🚀 Características principales
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- Diseño **responsive**: se adapta a celulares, tablets y computadoras.
+- Secciones informativas:
+  - **Inicio** con imagen destacada y eslogan.
+  - **Carta/menú**
+  - **Horarios y ubicación** con integración de Google Maps.
+  - **Historia del restaurante** y enfoque del servicio.
+  - **Formulario de contacto** para reservas o consultas.
+- Estilo visual moderno, limpio y fácil de personalizar.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## 🛠️ Tecnologías utilizadas
 
-## 🚀 Project Structure
+- HTML5 y CSS3
+- JavaScript
+- Tailwind CSS
+- Astro
 
-Inside of your Astro project, you'll see the following folders and files:
+## 💡 Objetivo del proyecto
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+Esta landing page fue creada para servir como **ejemplo real de lo que podemos construir** para negocios locales, en especial restaurantes, cafés o bares que quieran mejorar su presencia digital.
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## 📩 ¿Te interesa una página como esta?
 
-## 🧞 Commands
+Puedo personalizar este diseño para tu negocio, integrando:
+- Menú completo en línea.
+- Sistema de reservas por formulario.
+- WhatsApp o email directo desde la web.
+- Dominio propio y alojamiento incluido si lo necesitas.
 
-All commands are run from the root of the project, from a terminal:
+---
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+**Contáctame para más detalles o una propuesta sin compromiso.**
 
-## 👀 Want to learn more?
+📧 nuvinetweb@gmail.com
+📞 +56996748717
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+---
