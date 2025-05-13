@@ -39,7 +39,7 @@ import InstaSvg from '../assets/insta-svgrepo-com.svg';
                 class="text-gray-500 transition hover:text-gray-500/75"
                 href="#"
               >
-                <FbSvg class="w-10 h-10" />
+                <FbSvg class="w-10 h-10 transition-transform hover:scale-125" />
               </a>
             </li>
 
@@ -48,7 +48,7 @@ import InstaSvg from '../assets/insta-svgrepo-com.svg';
                 class="text-gray-500 transition hover:text-gray-500/75"
                 href=""
               >
-                <InstaSvg class="w-10 h-10" />
+                <InstaSvg class="w-10 h-10 transition-transform hover:scale-115" />
               </a>
             </li>
           </ul>
@@ -63,6 +63,7 @@ import InstaSvg from '../assets/insta-svgrepo-com.svg';
         <div class="block md:hidden">
           <button
             class="rounded-sm bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75"
+            id="menuBtn"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -79,11 +80,57 @@ import InstaSvg from '../assets/insta-svgrepo-com.svg';
             </svg>
           </button>
         </div>
+        <!-- menú desplegable -->
+          <div
+        class="hidden absolute end-0 top-13 z-10 mt-0.5 w-56 rounded-md border border-gray-300 bg-white shadow-lg"
+        role="menu"
+        id="menu"
+      >
+        <div class="p-2">
+          <a
+            href="#"
+            class="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700"
+            role="menuitem"
+          >
+            Nosotros
+          </a>
+
+          <a
+            href="#"
+            class="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-gray-300"
+            role="menuitem"
+          >
+            Reservas
+          </a>
+
+          <div class="flex">
+            <a
+            href="#"
+            class="inline rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-gray-300"
+            role="menuitem"
+          >
+            <FbSvg class="w-5 h-5" />
+          </a>
+          <a
+            href="#"
+            class=" inline rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-gray-300"
+            role="menuitem"
+          >
+            <InstaSvg class="w-5 h-5" />
+          </a>
+          </div>
+        </div>
+      </div>
       </div>
     </div>
   </div>
 </header>
 
-<style>
-  
-</style>
+<script>
+  const menuBtn = document.getElementById('menuBtn')
+  const menu = document.getElementById('menu')
+
+  menuBtn.addEventListener('click', () => {
+    menu.classList.toggle('hidden')
+  })
+</script>
