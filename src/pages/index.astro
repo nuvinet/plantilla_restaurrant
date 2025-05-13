@@ -1,11 +1,75 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+	<Header />
+	
+	  <!-- Carrusel -->
+	  <div id="carruselElSabor" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000" data-bs-pause="false">
+		<div class="carousel-inner">
+		  <div class="carousel-item active">
+			<img src="Plato 1.jpg" class="d-block w-100" alt="Plato 1">
+		  </div>
+		  <div class="carousel-item">
+			<img src="Plato 2.jpg" class="d-block w-100" alt="Plato 2">
+		  </div>
+		  <div class="carousel-item">
+			<img src="postre.jpg" class="d-block w-100" alt="Postre">
+		  </div>
+		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#carruselElSabor" data-bs-slide="prev">
+		  <span class="carousel-control-prev-icon"></span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carruselElSabor" data-bs-slide="next">
+		  <span class="carousel-control-next-icon"></span>
+		</button>
+	  </div>
+	
+	  <!-- Sección Nosotros -->
+	  <div id="nosotros" class="container">
+		<h2 class="section-title">Sobre Nosotros</h2>
+		<p class="text-center">En El Sabor del Alma, fusionamos tradición y creatividad para ofrecer experiencias culinarias memorables.</p>
+	  </div>
+	
+	  <!-- Sección Menú -->
+	  <div id="menu" class="container">
+		<h2 class="section-title">Nuestro Menú</h2>
+		<div class="row">
+		  <div class="col-md-4 text-center">
+			<img src="Plato 1.jpg" class="img-fluid rounded" alt="Plato principal">
+			<h4>Plato Estrella</h4>
+			<p>Delicia de la casa con sabores intensos y presentación exquisita.</p>
+		  </div>
+		  <div class="col-md-4 text-center">
+			<img src="Plato 2.jpg" class="img-fluid rounded" alt="Plato especial">
+			<h4>Especial del Chef</h4>
+			<p>Una explosión de ingredientes frescos y técnicas modernas.</p>
+		  </div>
+		  <div class="col-md-4 text-center">
+			<img src="postre.jpg" class="img-fluid rounded" alt="Postre">
+			<h4>Postre Final</h4>
+			<p>Un cierre dulce con texturas suaves y sabores equilibrados.</p>
+		  </div>
+		</div>
+	
+		<div class="text-center mt-4">
+		  <a href="carta.html" class="btn btn-danger">Ver la Carta Completa</a>
+		</div>
+	  </div>
+	
+	  <!-- Footer / Contacto -->
+	  <footer id="contacto">
+		<div class="container">
+		  <h4>Contacto</h4>
+		  <p>Dirección: Calle del Sabor 123, Ciudad Gourmet</p>
+		  <p>Teléfono: +34 123 456 789</p>
+		  <p>Email: contacto@elsabordelalma.com</p>
+		  <p>&copy; 2025 El Sabor del Alma. Todos los derechos reservados.</p>
+		</div>
+	  </footer>
 </Layout>
