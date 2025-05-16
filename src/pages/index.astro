@@ -2,60 +2,19 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Carrusel from '../components/carrusel.astro';
+import Hero from '../components/hero.astro';
 ---
 
 <Layout>
 	<Header />
-	<section
-	class="overflow-hidden bg-[url(../assets/plato_2.jpg)] bg-cover bg-top bg-no-repeat"
-	>
-	<div class="bg-black/50 p-8 md:p-12 lg:px-16 lg:py-24">
-		<div class="mx-auto max-w-6xl text-center ltr:sm:text-left rtl:sm:text-right">
-		<h2 class="text-2xl font-bold text-white sm:text-3xl md:text-5xl">Restaurant </h2>
-
-		<p class="hidden max-w-lg text-white/90 md:mt-6 md:block md:text-lg md:leading-relaxed">
-			Enclavado entre la brisa marina y el sonido de las olas, nuestro restaurante te invita a descubrir lo mejor de la cocina costera chilena. Pescados frescos, mariscos del día y recetas con tradición local, todo en un ambiente cálido frente al mar.
-		</p>
-
-		<div class="mt-4 sm:mt-8">
-			<a
-			href="https://wa.me/56996748717"
-			class="inline-block rounded-full bg-orange-500 px-10 py-3 text-md font-medium text-white transition hover:bg-orange-600 focus:ring-3 focus:ring-yellow-400 focus:outline-hidden"
-			>
-			Reserva!
-			</a>
-		</div>
-		</div>
-	</div>
-	</section>
-	  <Carrusel />
+	<Hero />
+	<Carrusel />
 	
 	  <!-- Sección Nosotros -->
 	  <div id="nosotros" class="container">
 		<h2 class="section-title">Sobre Nosotros</h2>
 		<p class="text-center">En El Sabor del Alma, fusionamos tradición y creatividad para ofrecer experiencias culinarias memorables.</p>
 	  </div>
-	
-	  <!-- Sección Menú -->
-	  <div id="menu" class="container">
-		<h2 class="section-title">Nuestro Menú</h2>
-		<div class="row">
-		  <div class="col-md-4 text-center">
-			<img src="Plato 1.jpg" class="img-fluid rounded" alt="Plato principal">
-			<h4>Plato Estrella</h4>
-			<p>Delicia de la casa con sabores intensos y presentación exquisita.</p>
-		  </div>
-		  <div class="col-md-4 text-center">
-			<img src="Plato 2.jpg" class="img-fluid rounded" alt="Plato especial">
-			<h4>Especial del Chef</h4>
-			<p>Una explosión de ingredientes frescos y técnicas modernas.</p>
-		  </div>
-		  <div class="col-md-4 text-center">
-			<img src="postre.jpg" class="img-fluid rounded" alt="Postre">
-			<h4>Postre Final</h4>
-			<p>Un cierre dulce con texturas suaves y sabores equilibrados.</p>
-		  </div>
-		</div>
 	
 		<div class="text-center mt-4">
 		  <a href="carta.html" class="btn btn-danger">Ver la Carta Completa</a>
