@@ -1,0 +1,28 @@
+<div class="relative ocerflow-hidden w-full h-64">
+    <div class="flex transition-transform duration-500" style="transform: translateX(0%">   
+        <img src="/plato_1.jpg" alt="plato 1" class="w-full flex-shrink-0 object-cover">
+        <img src="/plato_2.jpg" alt="plato 2" class="w-full flex-shrink-0 object-cover">
+        <img src="/plato_3.jpg" alt="plato 3" class="w-full flex-shrink-0 object-cover">
+    </div>
+    <button id="carousel-prev" class="absolute left-0 top-1/2 -translate-y-1/2 p-2 bg-black/30 text-white">←</button>
+    <button id="carousel-next" class="absolute right-0 top-1/2 -translate-y-1/2 p-2 bg-black/30 text-white">→</button>
+</div>
+
+<script>
+    let index = 0;
+
+    function showSlide(slides, step = 1) {
+    index = (index + step + slides.length) % slides.length;
+    const offset = index * -100;
+    slides[0].parentElement.style.transform = `translateX(${offset}%)`;
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+    const slides = document.querySelectorAll(".carousel-slide");
+    const nextBtn = document.getElementById("carousel-next");
+    const prevBtn = document.getElementById("carousel-prev");
+
+    nextBtn?.addEventListener("click", () => showSlide(slides, 1));
+    prevBtn?.addEventListener("click", () => showSlide(slides, -1));
+    });
+</script>

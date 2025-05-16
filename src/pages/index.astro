@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
+import Carrusel from '../components/carrusel.astro';
 ---
 
 <Layout>
@@ -9,7 +10,7 @@ import Header from '../components/Header.astro';
 	class="overflow-hidden bg-[url(../assets/plato_2.jpg)] bg-cover bg-top bg-no-repeat"
 	>
 	<div class="bg-black/50 p-8 md:p-12 lg:px-16 lg:py-24">
-		<div class="text-center ltr:sm:text-left rtl:sm:text-right">
+		<div class="mx-auto max-w-6xl text-center ltr:sm:text-left rtl:sm:text-right">
 		<h2 class="text-2xl font-bold text-white sm:text-3xl md:text-5xl">Restaurant </h2>
 
 		<p class="hidden max-w-lg text-white/90 md:mt-6 md:block md:text-lg md:leading-relaxed">
@@ -27,23 +28,7 @@ import Header from '../components/Header.astro';
 		</div>
 	</div>
 	</section>
-	  <!-- Carrusel -->
-	  <div id="carruselElSabor" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000" data-bs-pause="false">
-		<div class="carousel-inner">
-		  <div class="carousel-item active">
-			<img src="Plato 1.jpg" class="d-block w-100" alt="Plato 1">
-		  </div>
-		  <div class="carousel-item">
-			<img src="postre.jpg" class="d-block w-100" alt="Postre">
-		  </div>
-		</div>
-		<button class="carousel-control-prev" type="button" data-bs-target="#carruselElSabor" data-bs-slide="prev">
-		  <span class="carousel-control-prev-icon"></span>
-		</button>
-		<button class="carousel-control-next" type="button" data-bs-target="#carruselElSabor" data-bs-slide="next">
-		  <span class="carousel-control-next-icon"></span>
-		</button>
-	  </div>
+	  <Carrusel />
 	
 	  <!-- Sección Nosotros -->
 	  <div id="nosotros" class="container">
