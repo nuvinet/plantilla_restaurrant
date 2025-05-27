@@ -4,12 +4,25 @@ import Header from '../components/Header.astro';
 import Carrusel from '../components/carrusel.astro';
 import Hero from '../components/hero.astro';
 import Footer from '../components/footer.astro';
+import CardReview from '../components/cardReview.astro';
 ---
 
 <Layout>
 	<Header />
 	<Hero />
-	<Carrusel />
+	<section class="bg-gradient-to-t from-white to-emerald-500 py-10 px-4 lg:px-20">
+		 <h2 class="text-3xl font-bold text-center mb-8 text-[#4e342e]">Platos destacados</h2>
+		 <Carrusel />
+	</section>
+
+	<!-- Sección de reviews -->
+	<section class="my-10">
+		<div class="flex flex-wrap justify-center gap-10">
+			<CardReview />
+			<CardReview />
+			<CardReview />
+		</div>
+	</section>
 	
 	  <!-- Sección Nosotros -->
 	  <div id="nosotros" class="container">
